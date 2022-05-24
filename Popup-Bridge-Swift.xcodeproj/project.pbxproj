@@ -13,6 +13,7 @@
 		BE0FB6D5283D212C008508BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0FB6D3283D212C008508BE /* Main.storyboard */; };
 		BE0FB6D7283D212E008508BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0FB6D6283D212E008508BE /* Assets.xcassets */; };
 		BE0FB6DA283D212E008508BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0FB6D8283D212E008508BE /* LaunchScreen.storyboard */; };
+		BE0FB6E3283D2157008508BE /* PopupBridge in Frameworks */ = {isa = PBXBuildFile; productRef = BE0FB6E2283D2157008508BE /* PopupBridge */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0FB6E3283D2157008508BE /* PopupBridge in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Popup-Bridge-Swift";
+			packageProductDependencies = (
+				BE0FB6E2283D2157008508BE /* PopupBridge */,
+			);
 			productName = "Popup-Bridge-Swift";
 			productReference = BE0FB6CA283D212C008508BE /* Popup-Bridge-Swift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = BE0FB6C1283D212C008508BE;
+			packageReferences = (
+				BE0FB6E1283D2157008508BE /* XCRemoteSwiftPackageReference "popup-bridge-ios" */,
+			);
 			productRefGroup = BE0FB6CB283D212C008508BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE0FB6E1283D2157008508BE /* XCRemoteSwiftPackageReference "popup-bridge-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/braintree/popup-bridge-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE0FB6E2283D2157008508BE /* PopupBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE0FB6E1283D2157008508BE /* XCRemoteSwiftPackageReference "popup-bridge-ios" */;
+			productName = PopupBridge;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BE0FB6C2283D212C008508BE /* Project object */;
 }
